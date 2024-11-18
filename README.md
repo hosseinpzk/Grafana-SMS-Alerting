@@ -8,3 +8,16 @@ The SMS server will then handle the delivery, ensuring the message is sent to th
 ## Here is a schema of what is mentioned:
 
 ![flask2](https://github.com/user-attachments/assets/29a9a46d-264a-4e44-b6e0-239bcac80e39)
+
+
+Docker Build Command:
+```bash
+  docker build -t sms-alert-app .
+```
+Docker Run Command:
+ ```bash
+docker run -p 5000:5000 \
+    -v /path/to/local/token:/etc/appconf/token \
+    -v /path/to/local/targets.json:/etc/appconf/targets.json \
+    sms-alert-app
+ ```
