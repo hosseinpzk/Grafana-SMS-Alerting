@@ -21,3 +21,9 @@ docker run -p 5000:5000 \
     -v /path/to/local/targets.json:/etc/appconf/targets.json \
     sms-alert-app
  ```
+## Grafana Settings
+Now it's time to config Grafana webhook for sending POST alert to our flask application listener
+Here you have to set your Flask application IP/URL and specify the request type --> (POST)
+
+![grafana](https://github.com/user-attachments/assets/4a129587-22c6-49f6-a66f-1c82d473a28c)
+
